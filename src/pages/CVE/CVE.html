@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-navbar color="primary" >
+      <ion-title>
+        Common Vulnerabilities and Exposures
+      </ion-title>
+    </ion-navbar>
+    <ion-searchbar animated></ion-searchbar>
+  </ion-header>
+
+  <ion-content padding>
+   
+
+      <ion-card *ngFor="let post of CVES">
+
+          <ion-card-header>
+             
+         
+              <ion-grid>
+                <ion-row >
+                  
+                  <ion-col size="6">
+                      <ion-icon name="bug"></ion-icon>
+                   CVE:{{post.cve_id}}
+                   </ion-col>
+                  <ion-col size="6">
+                    <ion-icon name="calendar"></ion-icon>
+                   Published: {{post.publish_date}}
+                  </ion-col>
+             
+                </ion-row>
+              
+                <ion-row>
+                  <ion-col size="6">
+                  <ion-icon name="stats"></ion-icon>
+                   CVSS Score:{{post.cvss_score}}
+                   </ion-col>
+                  <ion-col size="6">
+                  <ion-icon name="sync"></ion-icon>
+                   Update: {{post.update_date}}
+                  </ion-col>
+                   
+                  </ion-row>
+              </ion-grid>
+
+              
+          </ion-card-header>
+        
+      
+          <ion-card-content>
+            <ion-row>
+              <ion-col col-12>
+                  <p> 
+            {{post.summary}}
+                  </p>
+            </ion-col>
+          </ion-row>
+          </ion-card-content>
+
+
+        
+
+         
+          <a href="{{post.url}}" ion-button full class="btn btn-default">Full Details</a>
+        </ion-card>
+
+    
+    </ion-content>
