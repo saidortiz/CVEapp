@@ -15,7 +15,7 @@
     "@angular/animations": "5.2.9",
     "@angular/common": "5.2.9",
     "@angular/compiler": "5.2.9",
-    "@angular/compiler-cli": "5.2.9",
+    "@angular/compiler-cli": "^11.0.5",
     "@angular/core": "5.2.9",
     "@angular/forms": "5.2.9",
     "@angular/http": "5.2.9",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.3",
-    "@ionic/lab": "1.0.24",
+    "@ionic/lab": "^3.2.10",
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project"
